@@ -28,7 +28,7 @@ $ npm run dev
 
 > 1. 使用了[mpvue-entry](https://github.com/F-loat/mpvue-entry)
 
-优点：去除了各个子页面的main.js，创建了router文件夹，使开发更贴近vue风格。
+优点：去除了各个子页面的main.js，创建了pages.js，集中式页面配置，使开发更贴近vue风格。
 
 [2018-05-24] 更新了mpvue-entry的版本=>1.1.7，支持热更新，不需要重启。
 
@@ -156,7 +156,6 @@ export default {
   |__ibox
    |__index.js          vue插件的注册，包含接口请求及工具utils
    |__utils.js          工具类及共用方法注册js
- |__router              小程序的page.json的配置
   |__flyio          
    |__apiUrl            接口请求地址管理
    |__config            接口请求配置管理
@@ -167,8 +166,8 @@ export default {
  |__store               vuex状态管理
  |__app.json            小程序app.json配置
  |__App.vue             小程序的App页面【整合了小程序页面快速布局的一些样式类】
- |__main.js             类似vue的main.js，整合了一些第三方插件
- |__pages.js            集中式页面配置
+ |__main.js             类似vue的main.js，可以插件进行配置
+ |__pages.js            小程序的page.json的配置 集中式页面配置
 |____static             静态资源文件夹
 |____.babelrc           es6语法转换配置文件
 |____.editorconfig      编辑器配置
