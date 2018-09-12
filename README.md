@@ -12,6 +12,13 @@ $ npm install
 $ npm run dev
 ```
 
+## 根据官方的脚手架进行优化，加入一些第三方插件，使开发风格更接近Vue/Vuex
+* [flyio](https://github.com/wendux/fly/blob/master/README-CH.md) - 同时支持浏览器、小程序、Node、Weex的基于Promise的跨平台http请求库。可以让您在多个端上尽可能大限度的实现代码复用。
+* [minapp-api-promise](https://github.com/bigmeow/minapp-api-promise) - 将所有异步微信小程序API promise化，支持then/catch、async/await的方式调用小程序API;支持请求队列，支持对原生API进行拦截。
+* [mpvue-entry](https://github.com/F-loat/mpvue-entry) - 集中式页面配置，避免重复编辑各页面的 main.js 文件，优化目录结构。
+* [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) - 在 mpvue 中使用 vue-router 兼容的路由写法。
+
+
 # 根据官方的cli封装了一系列的开发基础。
 
 主要的开发便利包含如下：
