@@ -21,6 +21,7 @@ $ npm run dev
 
 
 ## 根据官方的cli封装了一系列的开发基础
+## 感谢spencer1994，在他开源的源码基础上进行增强并整合到最新的mpvue上面
 
 主要的开发便利包含如下：
 
@@ -44,21 +45,19 @@ $ npm run dev
 
 优点：将所有异步微信小程序API promise化，支持then/catch、async/await的方式调用小程序API，具体用法可在代码里查看。
 
-优点：页面跳转直接可以用 vue-router 兼容的路由写法，开发体验更加接近Vue原生体验。
-
 > 5. 在 App.vue 页面中添加一些小程序页面快速布局的样式类
 
 优点：使用flex简单高效快速布局，并且兼容多设备端
 
-> 6. 自动注册store（作者spencer1994，由我整合到目前最新的mpvue框架上）。
+> 6. 自动注册store
 
 优点：多人协作开发不需要担心代码冲突，不需要每个store.js都要import引入。
 
 
-以下是关于第5点的说明：
+以下是关于第6点的说明：
 
 
-## 根据webpack的require.context及store的registerModule方法来自动注册store的modules
+### 根据webpack的require.context及store的registerModule方法来自动注册store的modules
 
 >在src下增加store文件夹。具体目录如下
 ``` js
