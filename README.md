@@ -185,9 +185,9 @@ export default {
 ## 整合后的稳定性如何？
 可以放心使用，几个整合的插件都是官方推荐的，并且经过了自己的测试，上线了几个小程序，运行稳定。
 
-![免费拿走](./image/1.png)
+<img width="150" height="150" src="./image/1.png"/>
 
-![喜欢就撩你](./image/2.png)
+<img width="150" height="150" src="./image/2.png"/>
 
 
   
