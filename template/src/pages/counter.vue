@@ -1,6 +1,6 @@
 <template>
   <div class="counter-warp">
-    <p>Vuex counter：{{ count }}</p>
+    <p>Vuex counter：<span>{{ count }}</span></p>
     <p>
       <button @click="increment">+</button>
       <button @click="decrement">-</button>
@@ -15,6 +15,11 @@
 import { mapState, mapActions } from 'vuex'
 
 export default {
+  data () {
+    return {
+      
+    }
+  },
   computed: {
     ...mapState('counter', [
       'count'
@@ -35,14 +40,16 @@ export default {
     }
   },
   async onLoad () {
-    try {
-      let resp = await this.$iBox.http('globalUrl.getProvince', { city: '汕头' })({
-        method: 'get'
-      })
-      console.log('await处理的接口回调' + resp.data.province)
-    } catch (error) {
-      console.log(error)
-    }
+    // await 写法
+    // try {
+    //   let resp = await this.$iBox.http('globalUrl.getProvince', { city: '汕头' })({
+    //     method: 'get'
+    //   })
+    //   console.log('await处理的接口回调' + resp.data.province)
+    // } catch (error) {
+    //   console.log(error)
+    // }
+    // .then写法
     this.getProvince({ city: '深圳' }).then(res => {
       console.log('页面中接口回调后的提示：' + res.data.city)
     })

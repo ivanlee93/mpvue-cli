@@ -178,10 +178,12 @@ export default {
   
 # 坑
 
-1.[vue文件中不能缺少script标签](https://github.com/Meituan-Dianping/mpvue/issues/562)，否则会导致编译不了。
+1.[config.js中配置与后台规定的表示响应成功的变量](https://github.com/Meituan-Dianping/mpvue/issues/562)，否则会导致接口返回异常。
 
-2.每个页面都要适配iphoneX，padding-bottom: 34px。可参考其他页面实现方式。注：底部无操作的话就不用将页面顶上去。
+2.[vue文件中不能缺少script标签](https://github.com/Meituan-Dianping/mpvue/issues/562)，否则会导致编译不了。
 
-3.slot插槽数据渲染有问题 https://github.com/Meituan-Dianping/mpvue/issues/427
+3.每个页面都要适配iphoneX，padding-bottom: 34px。可参考其他页面实现方式。注：底部无操作的话就不用将页面顶上去。
 
-4.页面初始化的data方式 Object.assign(this.$data, this.$options.data())
+4.slot插槽数据渲染有问题 https://github.com/Meituan-Dianping/mpvue/issues/427
+
+5.页面初始化的data方式 Object.assign(this.$data, this.$options.data())
