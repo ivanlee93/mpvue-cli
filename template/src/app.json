@@ -1,9 +1,5 @@
 {
-  "pages": [
-    "pages/index/main",
-    "pages/logs/main",
-    "pages/counter/main"
-  ],
+  "pages": [],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
