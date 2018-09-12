@@ -11,7 +11,7 @@
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
 	"appid": "",
-	"projectname": "输入项目名称",
+	"projectname": "projectname",
 	"condition": {
 		"search": {
 			"current": -1,

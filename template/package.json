@@ -26,20 +26,20 @@
     "copy-webpack-plugin": "^4.5.0",
     "css-loader": "^0.28.0",
     "cssnano": "^3.10.0",
-	{{#lint}}
+	  {{#lint}}
     "eslint": "^4.19.0",
     "eslint-friendly-formatter": "^4.0.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-html": "^4.0.0",
-	{{#if_eq lintConfig "standard"}}
+	  {{#if_eq lintConfig "standard"}}
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-promise": "^3.4.0",
-	"eslint-config-standard": "^11.0.0",
+	  "eslint-config-standard": "^11.0.0",
     "eslint-plugin-standard": "^3.0.0",
-	{{/if_eq}}
+	  {{/if_eq}}
     {{#if_eq lintConfig "airbnb"}}
-	"eslint-config-airbnb-base": "^12.1.0",
+	  "eslint-config-airbnb-base": "^12.1.0",
     "eslint-import-resolver-webpack": "^0.9.0",
     {{/if_eq}}
     {{/lint}}
