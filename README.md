@@ -94,31 +94,19 @@ export default store
 import Vue from 'vue'
 import App from '@/App'
 import store from '@/store'
-
-Vue.config.productionTip = false
-
 import IboxPlugin from '@/plugins/ibox'
+import WXP from 'minapp-api-promise'
+import MpvueRouterPatch from 'mpvue-router-patch'
+
 Vue.use(IboxPlugin)
+Vue.use(MpvueRouterPatch)
+Vue.config.productionTip = false
+Vue.prototype.$wx = WXP
+App.store = store
+App.mpType = 'app'
 
-const app = new Vue({
-  store,
-  ...App
-})
-
+const app = new Vue(App)
 app.$mount()
-
-export default {
-  config: {
-    pages: [],
-    window: {
-      backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      backgroundColor: '#ffffff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
-    }
-  }
-}
 
 ```
 
