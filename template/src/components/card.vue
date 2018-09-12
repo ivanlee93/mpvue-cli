@@ -1,8 +1,9 @@
 <template>
   <div>
-    <p class="card">
-      {{text}}
-    </p>
+    <input type="text"
+           class="form-control"
+           v-model="text"
+           placeholder="v-model" />
   </div>
 </template>
 
@@ -13,7 +14,8 @@ export default {
 </script>
 
 <style>
-.card {
-  padding: 10px;
+.form-control {
+  display: block;
+  text-align: center
 }
 </style>

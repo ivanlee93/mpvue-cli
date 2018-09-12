@@ -113,6 +113,7 @@ export default {
   padding: 0 12px;
   margin-bottom: 5px;
   border: 1px solid #ccc;
+  text-align: left;
 }
 
 .counter {
