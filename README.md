@@ -12,7 +12,7 @@ $ npm install
 $ npm run dev
 ```
 
-## 
+### 
 ## 优化官方的脚手架，整合优秀开源插件，使开发风格更接近Vue/Vuex
 
 * [flyio](https://github.com/wendux/fly/blob/master/README-CH.md) - 同时支持浏览器、小程序、Node、Weex的基于Promise的跨平台http请求库。可以让您在多个端上尽可能大限度的实现代码复用。
@@ -21,7 +21,7 @@ $ npm run dev
 * [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) - 在 mpvue 中使用 vue-router 兼容的路由写法。
 
 
-## 
+### 
 ## 根据官方的cli封装了一系列的开发基础
 感谢spencer1994，在他开源的源码基础上进行增强并整合到最新的mpvue上面
 
@@ -143,7 +143,7 @@ export default {
   }
 }
 ```
-## 
+### 
 ## 目录结构
 ```
 |____build              webpack打包的环境代码
