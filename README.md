@@ -11,17 +11,14 @@ $ cd mpvuesimple
 $ npm install
 $ npm run dev
 ```
-
-###          
+      
 ## 优化官方的脚手架，整合优秀开源插件，使开发风格更接近Vue/Vuex
 
-* [flyio](https://github.com/wendux/fly/blob/master/README-CH.md) - 同时支持浏览器、小程序、Node、Weex的基于Promise的跨平台http请求库。可以让您在多个端上尽可能大限度的实现代码复用。
-* [minapp-api-promise](https://github.com/bigmeow/minapp-api-promise) - 将所有异步微信小程序API promise化，支持then/catch、async/await的方式调用小程序API;支持请求队列，支持对原生API进行拦截。
-* [mpvue-entry](https://github.com/F-loat/mpvue-entry) - 集中式页面配置，避免重复编辑各页面的 main.js 文件，优化目录结构。
-* [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) - 在 mpvue 中使用 vue-router 兼容的路由写法。
-
-
-###               
+> [flyio](https://github.com/wendux/fly/blob/master/README-CH.md) 同时支持浏览器、小程序、Node、Weex的基于Promise的跨平台http请求库。可以让您在多个端上尽可能大限度的实现代码复用。
+> [minapp-api-promise](https://github.com/bigmeow/minapp-api-promise) 将所有异步微信小程序API promise化，支持then/catch、async/await的方式调用小程序API;支持请求队列，支持对原生API进行拦截。
+> [mpvue-entry](https://github.com/F-loat/mpvue-entry) 集中式页面配置，避免重复编辑各页面的 main.js 文件，优化目录结构。
+> [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) 在 mpvue 中使用 vue-router 兼容的路由写法。
+           
 ## 根据官方的cli封装了一系列的开发基础
 感谢[@spencer1994](https://github.com/spencer1994)，在他开源的源码基础上进行增强并整合到最新的mpvue上面
 
@@ -143,7 +140,7 @@ export default {
   }
 }
 ```
-###       
+
 ## 目录结构
 ```
 |____build              webpack打包的环境代码
@@ -183,7 +180,10 @@ export default {
 
 ```
 
-###        
+## 整合后的稳定性如何？
+可以放心使用，几个整合的插件都是官方推荐的，自己也经过了足够的测试，上线了两个小程序，运行稳定。
+
+  
 # 坑
 
 1.[vue文件中不能缺少script标签](https://github.com/Meituan-Dianping/mpvue/issues/562)，否则会导致编译不了。
