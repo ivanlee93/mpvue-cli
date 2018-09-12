@@ -20,7 +20,7 @@ $ npm run dev
 * [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) - 在 mpvue 中使用 vue-router 兼容的路由写法。
 
 
-# 根据官方的cli封装了一系列的开发基础（作者spencer1994，由我搬运到目前最新mpvue的上面）。
+## 根据官方的cli封装了一系列的开发基础
 
 主要的开发便利包含如下：
 
@@ -30,19 +30,33 @@ $ npm run dev
 
 [2018-05-24] 更新了mpvue-entry的版本=>1.1.7，支持热更新，不需要重启。
 
-[2018-09-7] 更新了v1.5.0 版本开始支持 mpvue-loader@^1.1.0 版本
+[2018-09-07] 更新了v1.5.x 版本开始支持 mpvue-loader@^1.1.0 版本
 
-
-> 2. 自动注册store
-
-优点：多人协作开发不需要担心代码冲突，不需要每个store.js都要import引入。
-
-> 3. 使用[flyio](https://wendux.github.io/dist/#/doc/flyio-en/readme)并封装了请求，
+> 2. 使用[flyio]并封装了请求，
 
 优点：根据[vuex官方推荐](https://vuex.vuejs.org/zh-cn/intro.html)，将background API封装到actions中，具体用法可在代码里查看。
 
-以下是关于第二点的说明：
-# 根据webpack的require.context及store的registerModule方法来自动注册store的modules
+> 3. 使用[mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch)
+
+优点：页面跳转直接可以用 vue-router 兼容的路由写法，开发体验更加接近Vue原生体验。
+
+> 4. 使用[minapp-api-promise](https://github.com/bigmeow/minapp-api-promise)
+
+优点：将所有异步微信小程序API promise化，支持then/catch、async/await的方式调用小程序API，具体用法可在代码里查看。
+
+优点：页面跳转直接可以用 vue-router 兼容的路由写法，开发体验更加接近Vue原生体验。
+
+> 5. 在 App.vue 页面中添加一些小程序页面快速布局的样式类
+
+优点：使用flex简单高效快速布局，并且兼容多设备端
+
+> 6. 自动注册store（作者spencer1994，由我整合到目前最新的mpvue框架上）。
+
+优点：多人协作开发不需要担心代码冲突，不需要每个store.js都要import引入。
+
+以下是关于第5点的说明：
+
+## 根据webpack的require.context及store的registerModule方法来自动注册store的modules
 
 >在src下增加store文件夹。具体目录如下
 ``` js
