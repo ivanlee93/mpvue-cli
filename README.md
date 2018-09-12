@@ -21,7 +21,7 @@ $ npm run dev
 
 
 ## 根据官方的cli封装了一系列的开发基础
-## 感谢spencer1994，在他开源的源码基础上进行增强并整合到最新的mpvue上面
+感谢spencer1994，在他开源的源码基础上进行增强并整合到最新的mpvue上面
 
 主要的开发便利包含如下：
 
@@ -58,7 +58,6 @@ $ npm run dev
 
 
 ### 根据webpack的require.context及store的registerModule方法来自动注册store的modules
-
 >在src下增加store文件夹。具体目录如下
 ``` js
   |__src
