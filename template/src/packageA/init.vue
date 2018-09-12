@@ -1,13 +1,10 @@
-<style lang="stylus">
-</style>
-
 <template>
   <div>
   </div>
 </template>
 
 <script>
-import { mapState, mapActions, mapMutations } from "vuex";
+import { mapState, mapActions, mapMutations } from 'vuex'
 
 export default {
 
@@ -23,15 +20,14 @@ export default {
 
   computed: {
     // 映射Store中的数据
-    ...mapState("", [""]),
+    ...mapState('', [''])
   },
 
   methods: {
     // 映射Store中的异步函数/请求
-    ...mapActions("", [""]),
+    ...mapActions('', ['']),
     // 映射Store中的同步函数/请求
-    ...mapMutations("", [""]),
-
+    ...mapMutations('', [''])
   },
 
   async onLoad () { },
@@ -39,5 +35,8 @@ export default {
   async onShow () { }
 }
 </script>
+
+<style lang="stylus">
+</style>
 
 
