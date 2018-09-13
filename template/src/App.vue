@@ -109,6 +109,22 @@ flex-text：按钮文本居中
   display: inline-table;
 }
 
+/* 解决动画闪烁，开启硬件加速，优化CSS动画性能 */
+.css3fix {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
 /* 框架布局 */
 .fl {
   float: left;
