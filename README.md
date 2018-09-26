@@ -13,7 +13,7 @@ $ npm run dev
 ```
       
 ## 优化官方的脚手架，整合优秀开源插件，使开发风格更接近Vue/Vuex
-> [flyio](https://github.com/wendux/fly/blob/master/README-CH.md) 同时支持浏览器、小程序、Node、Weex的基于Promise的跨平台http请求库。可以让您在多个端上尽可能大限度的实现代码复用。
+> [flyio](https://github.com/wendux/fly) 同时支持浏览器、小程序、Node、Weex的基于Promise的跨平台http请求库。可以让您在多个端上尽可能大限度的实现代码复用。
 
 > [minapp-api-promise](https://github.com/bigmeow/minapp-api-promise) 将所有异步微信小程序API promise化，支持then/catch、async/await的方式调用小程序API;支持请求队列，支持对原生API进行拦截。
 
@@ -34,7 +34,7 @@ $ npm run dev
 
 [2018-09-07] 更新了v1.5.x 版本开始支持 mpvue-loader@^1.1.0 版本
 
-> 2. 使用[flyio](https://github.com/wendux/fly/blob/master/README-CH.md)并封装了请求，
+> 2. 使用[flyio](https://github.com/wendux/fly)并封装了请求，
 
 优点：根据[vuex官方推荐](https://vuex.vuejs.org/zh-cn/intro.html)，将background API封装到actions中，具体用法可在代码里查看。
 
