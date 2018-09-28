@@ -2,13 +2,13 @@
   "name": "name",
   "version": "1.0.0",
   "description": "A Mpvue project",
-  "author": "{{ author }}",
+  "author": "liyifan <liyifan@xipintech.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "build": "rimraf dist && node build/build.js"{{#lint}},
-    "lint": "eslint --ext .js,.vue src"{{/lint}}
+    "build": "rimraf dist && node build/build.js",
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "mpvue": "^1.0.0",
@@ -26,23 +26,15 @@
     "copy-webpack-plugin": "^4.5.0",
     "css-loader": "^0.28.0",
     "cssnano": "^3.10.0",
-	  {{#lint}}
     "eslint": "^4.19.0",
     "eslint-friendly-formatter": "^4.0.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-html": "^4.0.0",
-	  {{#if_eq lintConfig "standard"}}
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-standard": "^3.0.0",
-	  {{/if_eq}}
-    {{#if_eq lintConfig "airbnb"}}
-	  "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-import-resolver-webpack": "^0.9.0",
-    {{/if_eq}}
-    {{/lint}}
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.0",
     "flyio": "^0.6.1",
@@ -50,6 +42,7 @@
     "minapp-api-promise": "^1.0.2",
     "mpvue-entry": "^1.5.0",
     "mpvue-loader": "^1.1.2",
+	"mpvue-page-factory": "^1.0.0",
     "mpvue-router-patch": "^0.2.1",
     "mpvue-template-compiler": "^1.0.0",
     "mpvue-webpack-target": "^1.0.0",
