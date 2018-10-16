@@ -21,8 +21,6 @@ $ npm run dev
 > [mpvue-entry](https://github.com/F-loat/mpvue-entry) 集中式页面配置，避免重复编辑各页面的 main.js 文件，优化目录结构。
 
 > [mpvue-router-patch](https://github.com/F-loat/mpvue-router-patch) 在 mpvue 中使用 vue-router 兼容的路由写法。
-
-> [mpvue-page-factory](https://github.com/HelloZJW/mpvue-page-factory) 解决mpvue多个页面公用一个vm对象的问题
            
 ## 根据官方的cli封装了一系列的开发基础
 感谢[@spencer1994](https://github.com/spencer1994)，在他开源的源码基础上进行增强并整合到最新的mpvue上面
