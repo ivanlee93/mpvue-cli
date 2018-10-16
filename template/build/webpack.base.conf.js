@@ -10,11 +10,7 @@ function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
-const entry = MpvueEntry.getEntry({
-  pages: './src/pages.js',
-  main: './src/main.js',
-  template: './src/template.js'
-})
+const entry = MpvueEntry.getEntry('./src/pages.js')
 
 module.exports = {
   entry,
