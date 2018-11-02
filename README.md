@@ -11,6 +11,12 @@ $ cd mpvuesimple
 $ npm install
 $ npm run dev
 ```
+
+## 注意：
+# mpvue官方 Issues140 有个影响比较明显的BUG，在官方没更新之前，使用下面的初始化可以解决（修复方案由HelloZJW提供）
+``` bash
+$ vue init ivanlee93/mpvue-cli-fix mpvuesimple
+```
       
 ## 优化官方的脚手架，整合优秀开源插件，使开发风格更接近Vue/Vuex
 > [flyio](https://github.com/wendux/fly) 同时支持浏览器、小程序、Node、Weex的基于Promise的跨平台http请求库。可以让您在多个端上尽可能大限度的实现代码复用。
