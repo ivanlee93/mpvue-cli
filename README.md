@@ -14,7 +14,7 @@ $ npm run dev
 
 ## 注意：mpvue官方 Issues140 有个影响比较明显的BUG，在官方没更新之前，使用下面的初始化可以解决，使用了[mpvue-page-factory](https://github.com/HelloZJW/mpvue-page-factory)（方案由HelloZJW提供）
 ``` bash
-$ vue init ivanlee93/mpvue-cli-fix mpvuesimple
+$ vue init ivanlee93/mpvue-cli-fix mpvuesimple（解决mpvue多个页面公用一个vm对象的问题）
 ```
       
 ## 优化官方的脚手架，整合优秀开源插件，使开发风格更接近Vue/Vuex
