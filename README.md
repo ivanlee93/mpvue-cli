@@ -12,7 +12,7 @@ $ npm install
 $ npm run dev
 ```
 
-## 注意：mpvue官方 Issues140 有个影响比较明显的BUG，在官方没更新之前，换成下面的初始化命令可临时解决，使用了[mpvue-page-factory](https://github.com/HelloZJW/mpvue-page-factory)（方案由HelloZJW提供）
+## 注意：[mpvue](https://github.com/Meituan-Dianping/mpvue)官方 Issues140 有个影响比较明显的BUG，在官方没更新之前，换成下面的初始化命令可临时解决，使用了[mpvue-page-factory](https://github.com/HelloZJW/mpvue-page-factory)（方案由HelloZJW提供）
 ``` bash
 $ vue init ivanlee93/mpvue-cli-fix mpvuesimple（解决mpvue多个页面公用一个vm对象的问题）
 ```
