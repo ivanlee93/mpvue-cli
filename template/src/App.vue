@@ -12,14 +12,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-/* this rule will be remove */
-* {
-  transition: width 2s;
-  -moz-transition: width 2s;
-  -webkit-transition: width 2s;
-  -o-transition: width 2s;
-}
+<style>
 
 /* flex布局兼容性写法
 flex：定义布局为盒模型
@@ -32,6 +25,7 @@ flex-pack-justify：子元素两端对齐
 border-box：元素padding不影响
 flex-text：按钮文本居中
 */
+
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -123,6 +117,7 @@ flex-text：按钮文本居中
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  animation-fill-mode: forwards;
 }
 
 /* 框架布局 */
