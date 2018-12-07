@@ -61,6 +61,7 @@ $ vue init ivanlee93/mpvue-cli-fix mpvuesimple（解决mpvue多个页面公用�
 
 ``` js
 // 在需要授权(比如地理位置，保存图片)的地方this.$iBox.auth('权限名',{权限参数},'弹窗的提示')。
+// 比如写了一个保存海报的功能，最后执行saveImageToPhotosAlbum这个方法即可，无需再判断用户取消了保存权限的逻辑
 saveImageToPhotosAlbum (e) {
       this.$iBox.auth(
         'saveImageToPhotosAlbum', {
@@ -75,7 +76,6 @@ saveImageToPhotosAlbum (e) {
         },
         '点击确定获取保存相册的权限'
       )
-      this.saveImage() //这里写授权后需要做的事情
 }
 ```
 
