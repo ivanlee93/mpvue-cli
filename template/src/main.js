@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from '@/App'
-import store from '@/store'
 import IboxPlugin from '@/plugins/ibox'
+import store from '@/store'
 import WXP from 'minapp-api-promise'
 import MpvueRouterPatch from 'mpvue-router-patch'
 

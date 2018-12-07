@@ -1,6 +1,7 @@
 // iBoxPlugin
 import handleRequest from '@/store/flyio/request'
 import utils from './utils'
+import auth from './auth'
 
 export default {
   /**
@@ -10,6 +11,7 @@ export default {
    */
   install (Vue) {
     const iBox = {
+      ...auth,
       ...utils,
       http: handleRequest
     }
