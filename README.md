@@ -207,7 +207,7 @@ export default {
   
 # 坑
 
-1.config.js中配置与后台规定的表示响应成功的变量，否则会导致接口返回异常。
+1.config.js中配置与后台规定的表示响应成功的变量（或注释掉相应代码片段），否则会导致接口返回异常。
 
 2.[vue文件中不能缺少script标签](https://github.com/Meituan-Dianping/mpvue/issues/562)，否则会导致编译不了。
 
