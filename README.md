@@ -11,7 +11,7 @@ $ cd mpvuesimple
 $ npm install
 $ npm run dev
 ```
-## 20190103 webpack-mpvue-asset-plugin 更新到0.1.2后导致 DevTools failed to parse SourceMap 源代码隐射问题，解决方法：降级到0.1.1即可
+## 注意：20190103 webpack-mpvue-asset-plugin 更新到0.1.2后导致 DevTools failed to parse SourceMap 源代码映射问题，解决方法：降级到0.1.1即可
 
 ## 注意：[mpvue](https://github.com/Meituan-Dianping/mpvue)官方 Issues140 有个影响比较明显的BUG，在官方没更新之前，换成下面的初始化命令可临时解决，使用了[mpvue-page-factory](https://github.com/HelloZJW/mpvue-page-factory)（方案由HelloZJW提供）
 ``` bash
