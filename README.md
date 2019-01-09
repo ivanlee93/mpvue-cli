@@ -11,12 +11,12 @@ $ cd mpvuesimple
 $ npm install
 $ npm run dev
 ```
-## 注意：20190103 webpack-mpvue-asset-plugin 更新到0.1.2后导致 DevTools failed to parse SourceMap 源代码映射问题，解决方法：降级到0.1.1即可
-
-## 注意：[mpvue](https://github.com/Meituan-Dianping/mpvue)官方 Issues140 有个影响比较明显的BUG，在官方没更新之前，换成下面的初始化命令可临时解决，使用了[mpvue-page-factory](https://github.com/HelloZJW/mpvue-page-factory)（方案由HelloZJW提供）
+## 解决mpvue多个页面公用一个vm对象的问题，使用的some-code的全局方案
 ``` bash
 $ vue init ivanlee93/mpvue-cli-fix mpvuesimple（解决mpvue多个页面公用一个vm对象的问题）
 ```
+## 注意：DevTools failed to parse SourceMap 源代码映射问题，降级到0.1.1即可解决
+## 最后推荐[omi-mp-create](https://github.com/ivanlee93/omi-mp-create-cli)，腾讯出品的原生框架，有类似Vuex的体验，mpvue我实在踩过太多坑了，太不建议用在公司的项目上，遇到问题真的非常麻烦
       
 ## 优化官方的脚手架，整合优秀开源插件，使开发风格更接近Vue/Vuex
 > [flyio](https://github.com/wendux/fly) 同时支持浏览器、小程序、Node、Weex的基于Promise的跨平台http请求库。可以让您在多个端上尽可能大限度的实现代码复用。
@@ -39,6 +39,8 @@ $ vue init ivanlee93/mpvue-cli-fix mpvuesimple（解决mpvue多个页面公用�
 [2018-05-24] 更新了mpvue-entry的版本=>1.1.7，支持热更新，不需要重启。
 
 [2018-09-07] 更新了v1.5.x 版本开始支持 mpvue-loader@^1.1.0 版本
+
+[2019-01-09] 更新了v2.x 版本仅支持 mpvue-loader@^1.1.0，兼容 megalo
 
 > 2. 使用[flyio](https://github.com/wendux/fly)并封装了请求，
 
