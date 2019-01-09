@@ -11,7 +11,7 @@ $ cd mpvuesimple
 $ npm install
 $ npm run dev
 ```
-## 解决mpvue多个页面公用一个vm对象的问题，使用的some-code的全局方案
+## 解决 [#140](https://github.com/Meituan-Dianping/mpvue/issues/1295)
 ``` bash
 $ vue init ivanlee93/mpvue-cli-fix mpvuesimple（解决mpvue多个页面公用一个vm对象的问题）
 ```
