@@ -7,10 +7,12 @@ import MpvueRouterPatch from 'mpvue-router-patch'
 
 Vue.use(IboxPlugin)
 Vue.use(MpvueRouterPatch)
-Vue.config.productionTip = false
 Vue.prototype.$wx = WXP
-App.store = store
-App.mpType = 'app'
+Vue.config.productionTip = false
 
-const app = new Vue(App)
+const app = new Vue({
+  mpType: 'app',
+  store,
+  ...App
+})
 app.$mount()

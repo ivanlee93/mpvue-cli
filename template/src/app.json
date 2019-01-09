@@ -1,5 +1,15 @@
 {
-  "pages": [],
+  "pages": [
+    "pages/index",
+    "pages/counter",
+    {
+      "path": "packageA/logs",
+      "subPackage": true,
+      "config": {
+        "navigationBarTitleText": "查看启动日志"
+      }
+    }
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
