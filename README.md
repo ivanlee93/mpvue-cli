@@ -16,7 +16,7 @@ $ npm run dev
 $ vue init ivanlee93/mpvue-cli-fix mpvuesimple（解决mpvue多个页面公用一个vm对象的问题）
 ```
 ## 注意：SourceMap 映射问题，webpack-mpvue-asset-plugin 降级到0.1.1即可解决
-## 最后推荐[omi-mp-create](https://github.com/ivanlee93/omi-mp-create-cli)，腾讯出品的原生框架，有类似Vuex的体验，mpvue有些坑遇到真的非常麻烦，不建议用在公司的紧急上线的项目上！
+## 推荐[omi-mp-create](https://github.com/ivanlee93/omi-mp-create-cli)，腾讯出品的原生框架，有类似Vuex的体验，mpvue有些坑遇到真的非常麻烦，不建议用在公司的紧急上线的项目上！
       
 ## 优化官方的脚手架，整合优秀开源插件，使开发风格更接近Vue/Vuex
 > [flyio](https://github.com/wendux/fly) 同时支持浏览器、小程序、Node、Weex的基于Promise的跨平台http请求库。可以让您在多个端上尽可能大限度的实现代码复用。
