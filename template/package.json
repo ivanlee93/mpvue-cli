@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.vue src"{{/lint}}
   },
   "dependencies": {
-    "mpvue": "^1.0.0",
+    "mpvue": "1.0.13",
     "vuex": "^3.0.0"
   },
   "devDependencies": {
@@ -52,9 +52,9 @@
     "minapp-api-promise": "^1.0.2",
     "mpvue-config-loader": "^0.1.0",
     "mpvue-entry": "next",
-    "mpvue-loader": "^1.1.2",
+    "mpvue-loader": "1.1.4",
     "mpvue-router-patch": "^0.2.1",
-    "mpvue-template-compiler": "^1.0.0",
+    "mpvue-template-compiler": "1.0.13",
     "mpvue-webpack-target": "^1.0.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^2.0.0",
@@ -74,7 +74,7 @@
     "webpack-bundle-analyzer": "^2.13.0",
     "webpack-dev-middleware-hard-disk": "^1.12.0",
     "webpack-merge": "^4.1.0",
-    "webpack-mpvue-asset-plugin": "^0.1.0"
+    "webpack-mpvue-asset-plugin": "0.1.1"
   },
   "engines": {
     "node": ">= 4.0.0",
